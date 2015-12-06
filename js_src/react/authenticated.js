@@ -1,6 +1,7 @@
 var React = require('react');
 var Parse = require('parse');
 var ParseReact = require('parse-react');
+var Events = require('./events');
 
 module.exports = React.createClass({
   mixins: [ParseReact.Mixin],
@@ -25,6 +26,8 @@ module.exports = React.createClass({
           <a className="btn btn-warning" href="javascript:;" onClick={this.unlinkFb}>Unlink Facebook</a> :
           <a className="btn btn-default" href="javascript:;" onClick={this.linkFb}>Link Facebook</a>
         }
+
+        <Events />
       </div>
     );
   },
