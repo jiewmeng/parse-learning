@@ -1,0 +1,5 @@
+node_modules
+.parse.local
+.parse.project
+public/js/app.js
+public/js/libs.js
